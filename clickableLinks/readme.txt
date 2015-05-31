@@ -1,0 +1,1 @@
+Makes lints in the text are clickable

@@ -1,0 +1,85 @@
+body {
+  font-family: Helvetica;
+}
+
+div {
+  border: 0px solid #555;
+}
+
+.calc {
+  width: 320px;
+  height: 350px;
+  padding: 10px;
+  background: #555;
+  border: 3px solid #333;
+  border-radius: 7px;
+  background: linear-gradient(to top, #444, #555);
+}
+
+.screen {
+  height: 80px;
+  padding: 15px 10px 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 16px;
+  background: #CE6;
+  border: 1px solid #9A7;
+  border-radius: 2px;
+  color: #333;
+  text-align: right;
+  font-size: 5em;
+  font-family: "Lucida Console";
+}
+
+.button-board {
+  height: auto;
+}
+
+.num-pad {
+}
+
+.row {
+  text-align: center;
+  margin-top: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.row .btn {
+  
+}
+
+.btn {
+  width: 61px;
+  height: 40px;
+  background: #777;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin: 1px;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  color: #CCC;
+  font-size: 2em;
+  cursor: default;
+  text-shadow: 0px 0px 2px #222;
+  background: linear-gradient(to top, #666, #777);
+}
+
+.btn:active {
+  opacity: 0.5;
+  transition: 0.1s;
+}
+
+.c-btn {
+  background: #C44;
+  background: linear-gradient(to top, #C44, #E66);
+  text-shadow: 0px 0px 2px #555;
+}
+
+.op-btn {
+  background: #BBB;
+  background: linear-gradient(to top, #CCC, #EEE);
+  color: #333;
+  text-shadow: 0px 0px 2px #FFF;
+}
