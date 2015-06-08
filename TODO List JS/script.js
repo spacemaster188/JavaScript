@@ -14,7 +14,19 @@ var maxLength = 32;
 var taskArr = [];
 var preparedTaskArr = [];
 var selected = [];
-
+document.onkeyup = function (e) {
+  e = e || window.event;
+  if (e.keyCode === 13) {
+     onAdd();
+	 showTasks();
+  }
+  return false;
+}
+/*Setting default string for date field */
+function setDefaultDateField() {
+  var ld = new Date();
+  document.getElementById("datestr").value = ld.toLocaleDateString();
+}
 /* Sorting by task (increasing)*/
 function byTask(a, b) {
   if (a.task > b.task){	
@@ -74,7 +86,7 @@ function onAdd() {
 	  }, taskArr);
   }
   document.getElementById('taskstr').value = emptyStr;
-  document.getElementById('datestr').value = 'dd-mm-yyyy';
+  setDefaultDateField();
   selected = [];
 }
 
@@ -219,11 +231,11 @@ function applyEditedTask() {
      taskArrModifyItem();
   }
   document.getElementById('taskstr').value = emptyStr;
-  document.getElementById('datestr').value = 'dd-mm-yyyy';
+  setDefaultDateField();
   selected = [];
 
   taskString.innerHTML = tasksTmp;
-  dateString.innerHTML = 'dd-mm-yyyy';
+  setDefaultDateField();
   tasksTmp = emptyStr;
   editIdTmp = emptyStr;
 }

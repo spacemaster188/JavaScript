@@ -25,7 +25,7 @@ textarea {
   font-size:18px;
   font-weight:bold;
   color: #5497CC;
-  padding:0 10px 0 10px;  
+  padding:0 10px 0 10px;
 }
 
 .header-wr{
@@ -68,6 +68,11 @@ vertical-align: middle;
 	width:554px;
 	height:25px;
 	text-align:center;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.60;
+	-khtml-opacity: 0.60;
+	opacity: 0.60;
 }
 
 .content-divider{
