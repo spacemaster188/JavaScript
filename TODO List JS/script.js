@@ -78,7 +78,7 @@ function onAdd() {
   taskString = document.getElementById('taskstr').value;
   dateString = document.getElementById('datestr').value;
 	
-  if(isStringPass(taskString) && isStringPass(dateString)){
+  if(taskString.trim() && dateString.trim()){
      addElementToArray({
 	  isCompleted: false,
 	  task: taskString,
@@ -227,7 +227,7 @@ function editTask() {
 function applyEditedTask() {
   taskString = document.getElementById('taskstr').value;
   dateString = document.getElementById('datestr').value;
-  if(isStringPass(taskString) && isStringPass(dateString)){
+  if(taskString.trim() && dateString.trim()){
      taskArrModifyItem();
   }
   document.getElementById('taskstr').value = emptyStr;
@@ -284,11 +284,4 @@ function setSortByDate() {
   sortByLetter = false;
   sortByDate = true;
   showTasks();
-}
-
-function isStringPass(str) {
-  if(str!=null && str!=''){
-     return true;	
-  }
-  return false;
 }
