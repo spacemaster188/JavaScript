@@ -14,6 +14,8 @@ var maxLength = 32;
 var taskArr = [];
 var preparedTaskArr = [];
 var selected = [];
+
+/* Update table by pressing Enter*/
 document.onkeyup = function (e) {
   e = e || window.event;
   if (e.keyCode === 13) {
